@@ -1,1 +1,140 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>SNAP Cube Modeler</title>
+
+    <meta name="theme-color" content="#fff">
+<!-- uncomment if using polymer 
+    <link rel="shortcut icon" sizes="32x32" href="/images/shop-icon-32.png">
+    <script src="/static/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <script>
+        window.Polymer = {
+            dom: 'shadow',
+            lazyRegister: true
+        };
+    </script> 
+    <link rel="import" href="/static/bower_components/polymer/polymer.html">
+    <link rel="import" href="/static/bower_components/google-map/google-map.html">
+    <link rel="import" href="/static/bower_components/app-layout/app-layout.html">
+    <link rel="import" href="/static/bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+    <link rel="import" href="/static/bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="/static/bower_components/paper-card/paper-card.html">
+    <link rel="import" href="/static/bower_components/paper-input/paper-input.html">
+    <link rel="import" href="/static/bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="/static/bower_components/bwt-datatable/bwt-datatable.html">
+    <link rel="import" href="/static/bower_components/paper-button/paper-button.html">
+    <link rel="import" href="/static/bower_components/paper-slider/paper-slider.html">
+    <link rel="import" href="/static/bower_components/paper-spinner/paper-spinner.html">
+    <link rel="import" href="/static/bower_components/paper-toggle-button/paper-toggle-button.html">
+    <link rel="import" href="/static/bower_components/iron-range-behavior/iron-range-behavior.html">
+    <link rel="import" href="/static/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/static/bower_components/iron-icons/maps-icons.html">
+    <link rel="import" href="/static/bower_components/iron-icons/hardware-icons.html">   
+    <link rel="import" href="/static/bower_components/iron-icons/device-icons.html">
+    <link rel="import" href="/static/bower_components/iron-icons/av-icons.html">
+    <link rel="import" href="/static/bower_components/paper-date-picker-item/paper-datetime-picker-item.html">
+-->
+
+    <style is="custom-style">
+        body {
+            font-family: Arial, serif;
+            font-size: 18px;
+            position: relative;
+          //  min-width: 960px;
+            margin: 0;
+        }
+
+        app-header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          //height: 200px;
+          color: #fff;
+          background-color: #4285f4;
+        }
+
+        paper-tabs {
+          background-color: #4285f4;
+        }
+        paper-icon-button {
+          --paper-icon-button-ink-color: white;
+        }
+        app-toolbar {
+          margin-bottom: 20px;
+        }
+        [threshold-triggered] paper-tabs {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1;
+        }
+        paper-card {
+            width: 94%;
+            top: 30px;
+            left: 3%;
+            right: 3%;
+        }
+
+        /* from elm-google-maps */
+        .big {
+            height: 60px;
+            width: 60px;
+            padding: 8px;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        paper-slider {
+            width: 100%;
+        }
+
+        .elm-logo {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 64px;
+        }
+
+        google-map {
+            height: 400px;
+            margin: 10px;
+        }
+
+        label {
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+    <script type="text/javascript" src="/static/app.js"></script>
+    <script type="text/javascript">
+      var app = Elm.Main.fullscreen();
+    </script>
+</body>
+<!--
+<script>
+  if ('serviceWorker' in navigator) {
+    console.log("Registering service-worker");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Succeeded");
+      }).catch(function(err) {
+        console.log("Failed: ", err)
+      });
+  }
+</script>
+-->
+</html>
